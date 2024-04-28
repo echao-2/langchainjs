@@ -89,7 +89,7 @@ export class ChatWebLLM extends SimpleChatModel<WebLLMCallOptions> {
   }
 
   _llmType() {
-    return "ChatWebLLM: " + this.modelRecord.model_id
+    return this.modelRecord.model_id
   }
 
   async initialize() {
